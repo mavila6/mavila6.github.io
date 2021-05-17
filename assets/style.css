@@ -4,12 +4,14 @@
     --tertiary-color: rgb(86, 86, 194);
 }
 
+/* Overides default browser styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Assigns font properties to body of html */
 body {
     color: var(--primary-color);
     font-family: Helvetica, Arial, sans-serif;
@@ -17,6 +19,7 @@ body {
 }
 
 /* HEADER / NAV BAR STYLES START */
+/* Makes header sticky to entire page and assigns image */
 header {
     padding: 10px 25px;
     display: flex;
@@ -34,6 +37,7 @@ header {
     border-bottom: 3px solid;
 }
 
+/* Adds style to main heading */
 header h1 {
     font-weight: bold;
     font-size: 36px;
@@ -41,6 +45,7 @@ header h1 {
     text-shadow: 0 0 10px var(--secondary-color);
 }
 
+/* removes text decoration from anchors in nav bar */
 header a {
     text-decoration: none;
     color: var(--primary-color);
@@ -50,6 +55,7 @@ header nav {
     margin: 7px 0;
 }
 
+/* spaces out the list items */
 header nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -58,6 +64,7 @@ header nav ul {
     list-style: none;
 }
 
+/* styles li in nav bar */
 header nav ul li a {
     padding: 5px 15px;
     font-weight: bold;
@@ -65,6 +72,7 @@ header nav ul li a {
     text-shadow: 0 0 10px var(--secondary-color);
 }
 
+/* adds hover effect */
 header nav ul li a:hover {
     background: rgba(0, 0, 0);
     color: var(--secondary-color);
@@ -74,6 +82,8 @@ header nav ul li a:hover {
 }
 /* HEADER / NAVBAR STYLES END */
 
+/* Hero styles begin */
+/* Adds image to hero and positioning */
 figure {
     background-image: url('./images/portfolio-background.jpg');
     background-size: cover;
@@ -84,6 +94,7 @@ figure {
     background-position: 80%;
 }
 
+/* adds style to hero heading */
 figure strong {
     font-weight: bold;
     font-size: 50px;
@@ -94,6 +105,7 @@ figure strong {
     text-align: center;
 }
 
+/* formats hero image */
 figure img {
     border-radius: 15px;
     margin-bottom: 5%;
@@ -101,8 +113,10 @@ figure img {
     height: auto;
     box-shadow: 0 0 10px var(--secondary-color);
 }
+/* End of hero styling */
 
 /* FOOTER STYLES START */
+/* Determines hero spacing */
 footer {
     background: var(--primary-color);
     width: 100%;
@@ -112,27 +126,33 @@ footer {
     flex-wrap: wrap;
 }
 
+/* removes bullet points */
 footer ul {
     list-style: none;
     display: flex;
 }
 
+/* spacing for li in footer */
 footer ul li {
     padding-right: 10px;
     padding-left: 5px;
 }
 
+/* spacing and font color for footer */
 footer div {
     text-align: right;
     color: var(--secondary-color);
     margin-top: auto;
 }
 
+/* changes size of footer link icons */
 footer img {
     width: 30px;
 }
 /* END FOOTER STYLES */
 
+/* About me section styles begin*/
+/* sets styles for whole section including background color and borders */
 .bio {
     text-align: center;
     border-top: 7px solid;
@@ -141,11 +161,15 @@ footer img {
     background-color: var(--tertiary-color);
 }
 
+/* Determines font styles for About me heading */
 .bio h2 {
     font-size: 35px;
     text-shadow: 0 0 10px var(--secondary-color);
 }
+/* About me section styles end */
 
+/* My work section styles begin */
+/* Assigns spacing and background color */
 .projects {
     text-align: center;
     border-bottom: 7px solid;
@@ -153,32 +177,38 @@ footer img {
     background-color: rgb(209, 148, 17);
 }
 
+/* adds border to main heading */
 .projects article {
     border-bottom: 2px solid;
 }
 
+/* changes font properties for project titles */
 .projects h2 {
     font-size: 35px;
     text-shadow: 0 0 10px var(--secondary-color);
 }
 
+/* decides styling for paragraph sections */
 .projects p {
     font-weight: bold;
     padding: 10px;
     color: var(--tertiary-color);
 }
 
+/* adds flebox model to projects */
 .my-projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
+/* Changes h3 font size and decoration */
 .my-projects h3 {
     font-size: 25px;
     text-shadow: 0 0 10px var(--secondary-color);
 }
 
+/* Determines size of images */
 .my-projects img {
     width: 300px;
     height: 200px;
@@ -189,49 +219,60 @@ footer img {
     padding: 10px;
 }
 
+/* adds hover effect to images */
 .my-projects img:hover {
     background-color: rgba(255, 255, 255, 1);
     border: 8px solid var(--tertiary-color)
 }
 
+/* makes first project a block element */
 .run-buddy {
     width:100%;
 }
 
+/* makes first project image bigger */
 .run-buddy .rb-img {
     width: 400px;
     height: 300px;
 }
+/* My work section styles end */
 
+/* contact me section styles begin */
+/* adds styles for contact section */
 .contact {
     background-color: var(--tertiary-color);
     text-align: center;
     padding: 10px;
 }
 
+/* adds style to contact section heading */
 .contact h2 {
     font-size: 35px;
     text-shadow: 0 0 10px var(--secondary-color);
 }
 
+/* removes bullet points */
 .contact li {
     list-style: none;
 }
 
+/* gives anchors a font color */
 .contact a {
     text-decoration:none;
     color: var(--secondary-color)
 }
 
+/* hover effect added to anchors */
 .contact a:hover {
     text-decoration: underline;
     background-color: rgb(255, 255, 255);
     border-radius: 15px;
     color: var(--primary-color);
 }
+/* Contact me section styles end */
 
 /*Media Queries Section*/
-
+/* makes the webpage compatible with different screen sizes */
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
     
