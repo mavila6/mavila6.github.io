@@ -1,7 +1,7 @@
 :root {
     --primary-color: rgba(0,0,0);
     --secondary-color: rgba(255, 255, 255);
-    --tertiary-color: rgb(58, 58, 187);
+    --tertiary-color: rgb(86, 86, 194);
 }
 
 * {
@@ -13,6 +13,7 @@
 body {
     color: var(--primary-color);
     font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.7;
 }
 
 header {
@@ -28,14 +29,14 @@ header {
     background-position: 80%;
     background-attachment: fixed;
     z-index: 9999;
+    border-bottom: 3px solid;
 }
 
 header h1 {
-font-weight: bold;
-font-size: 36px;
-color: var(--primary-color);
-margin: 0;
-text-shadow: 0 0 10px var(--secondary-color);
+    font-weight: bold;
+    font-size: 36px;
+    margin: 0;
+    text-shadow: 0 0 10px var(--secondary-color);
 }
 
 header a {
@@ -57,7 +58,7 @@ header nav ul {
 
 header nav ul li a {
     padding: 10px 15px;
-    font-weight: lighter;
+    font-weight: bold;
     font-size: 1.55vw;
     text-shadow: 0 0 10px var(--secondary-color);
 }
@@ -67,12 +68,138 @@ header nav ul li a:hover {
     color: var(--secondary-color);
     border-radius: 15px;
     text-shadow: none;
+    font-weight: normal;
+}
+
+
+figure {
+    background-image: url('./images/portfolio-background.jpg');
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-attachment: fixed;
+    background-position: 80%;
+}
+
+figure strong {
+    font-weight: bold;
+    font-size: 60px;
+    color: var(--primary-color);
+    margin: 25px 0;
+    text-shadow: 0 0 10px var(--secondary-color);
+    width: 100%;
+    text-align: center;
+}
+
+figure img {
+    border-radius: 15px;
+    margin-bottom: 5%;
+    max-width: 30%;
+    height: auto;
+    box-shadow: 0 0 10px var(--secondary-color);
+}
+
+.bio {
+    text-align: center;
+    border-top: 7px solid;
+    border-bottom: 7px solid;
+    padding: 25px;
+    background-color: var(--tertiary-color);
+}
+
+.bio h2 {
+    font-size: 35px;
+    text-shadow: 0 0 10px var(--secondary-color);
+}
+
+.projects {
+    text-align: center;
+    border-bottom: 7px solid;
+    padding: 25px;
+    background-color: rgb(209, 148, 17);
+}
+
+.projects article {
+    border-bottom: 2px solid;
+}
+
+.projects h2 {
+    font-size: 35px;
+    text-shadow: 0 0 10px var(--secondary-color);
+}
+
+.projects p {
+    font-weight: bold;
+    padding: 10px;
+    color: var(--tertiary-color);
+}
+
+.my-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.my-projects h3 {
+    font-size: 25px;
+    text-shadow: 0 0 10px var(--secondary-color);
+}
+
+.my-projects img {
+    width: 300px;
+    height: 200px;
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px var(--primary-color);
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.my-projects img:hover {
+    background-color: rgba(255, 255, 255, 1);
+    border: 8px solid var(--tertiary-color)
+}
+
+.run-buddy {
+    width:100%;
+}
+
+.run-buddy .rb-img {
+    width: 400px;
+    height: 300px;
+}
+
+.contact {
+    background-color: var(--tertiary-color);
+    text-align: center;
+    padding: 10px;
+}
+
+.contact h2 {
+    font-size: 35px;
+    text-shadow: 0 0 10px var(--secondary-color);
+}
+
+.contact li {
+    list-style: none;
+}
+
+.contact a {
+    text-decoration:none;
+    color: var(--secondary-color)
+}
+
+.contact a:hover {
+    text-decoration: underline;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    color: var(--primary-color);
 }
 
 footer {
     background: var(--primary-color);
     width: 100%;
-    padding: 10px 35px;
+    padding: 10px 15px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -81,6 +208,11 @@ footer {
 footer ul {
     list-style: none;
     display: flex;
+}
+
+footer ul li {
+    padding-right: 10px;
+    padding-left: 5px;
 }
 
 footer div {
@@ -93,19 +225,19 @@ footer img {
     width: 30px;
 }
 
-.hero {
-    background-image: url('./images/portfolio-background.jpg');
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    background-attachment: fixed;
-    background-position: 80%;
+/*Media Queries Section*/
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+
 }
 
-.hero strong {
-    font-weight: bold;
-    font-size: 80px;
-    color: var(--primary-color);
-    margin: 80px 0;
-    text-shadow: 0 0 10px var(--secondary-color);
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+
 }
