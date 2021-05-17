@@ -18,9 +18,9 @@ Created a webpage from scratch to make a portfolio website containing a bit of m
 
 ## Screenshots
 
-![Marco's Portfolio] (assets/images/screenshot1.png)
-![Marco's Portfolio] (assets/images/screenshot2.png)
-![Marco's Portfolio] (assets/images/screenshot3.png)
+![Marco's-portfolio](assets/images/screenshot1.png)
+![Marco's-portfolio](assets/images/screenshot2.png)
+![Marco's-portfolio](assets/images/screenshot3.png)
 
 ## Author
 
