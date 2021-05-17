@@ -252,4 +252,27 @@ footer img {
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
 
+    header nav ul li a {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .my-projects img {
+        width: 250px;
+        height: 150px;
+    }
+
+    .run-buddy .rb-img {
+        width: 280px;
+        height: 200px;;
+    }
+}
+
+/* MEDIA QUERY FOR SMALLER MOBILE DEVICES */
+@media screen and (max-width: 328px) {
+
+    .run-buddy .rb-img {
+        width:250px;
+        height: 150px;
+    }
 }
